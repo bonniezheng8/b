@@ -1,0 +1,239 @@
+/*
+body{
+    font-family:'Public Sans', sans-serif;
+    font-size: 15px;
+    margin: 15px;
+    background-color: rgb(25,25,25); 
+    height: calc(100vh - 8em);
+    padding: 1em;
+    color: rgba(255,255,255,.9);
+}
+*/
+
+h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 90px;
+    margin: 0px;
+}
+
+h3{
+    margin-left: 15px;
+}
+
+/*DROPDOWN*/
+
+    ul {
+      list-style-type: circle;
+    }
+
+    #myUL {
+      list-style-type: none;
+      margin: px;
+      padding-left: 10px;
+    }
+
+    li{
+        margin: 10px;
+    }
+
+    .caret {
+      cursor: pointer;
+      -webkit-user-select: none; /* Safari 3.1+ */
+      -moz-user-select: none; /* Firefox 2+ */
+      -ms-user-select: none; /* IE 10+ */
+      user-select: none;
+      text-decoration: underline;
+    /*  margin: 0px;*/
+    }
+
+    .caret::before {
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .caret-down::before {
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Safari */'
+      transform: rotate(90deg); 
+    }
+
+    .nested {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+HTML CSSResult
+EDIT ON
+
+/* typing header */
+/*@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);*/
+
+    /* Global */
+    html{
+      min-height: 100%;
+      overflow: hidden;
+    }
+
+    .line-1{
+    /*    position: relative;*/
+        font-family: 'Anonymous Pro', monospace;
+    /*    top: 50%;  */
+    /*    width: 24em;*/
+    /*    margin: 0 auto;*/
+        border-right: 2px solid rgba(255,255,255,.75);
+        font-size: 70px;
+    /*    text-align: center;*/
+        white-space: nowrap;
+        overflow: hidden;
+    /*    transform: translateY(-50%);*/
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+
+    /* Animation */
+    .anim-typewriter{
+      animation: typewriter 3s steps(24) 0s 1 normal both,
+                 blinkTextCursor 1s steps(44) infinite normal;
+    }
+    @keyframes typewriter{
+      from{width: 0;}
+      to{width: 600px;}
+    }
+    @keyframes blinkTextCursor{
+      from{border-right-color: rgba(255,255,255,.75);}
+      to{border-right-color: transparent;}
+    }
+
+  
+     :root {
+        --primary-color: #302AE5;
+        --secondary-color: #536390;
+        --font-color: #424242;
+        --bg-color: #fff;
+        --heading-color: #292922;
+    }
+
+    [data-theme="dark"] {
+        --primary-color: #9A97F3;
+        --secondary-color: #818cab;
+        --font-color: rgba(255,255,255,.9);
+        --bg-color: rgb(25,25,25);
+        --heading-color: #818cab;
+    }
+
+    body {
+      font-family: 'Public Sans', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--font-color);
+      max-width: 90%;
+      margin: 0 auto;
+      font-size: calc(1rem + 0.1vh);
+    }
+
+/*
+    h1 {
+        color: var(--heading-color);
+        font-family: "Sansita One", serif;
+        font-size: 3rem;
+        margin-bottom: 1vh;
+    }
+*/
+
+/*
+    p {
+      font-size: 1.1rem;
+      line-height: 5.6rem;
+    }
+*/
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      border-bottom: 3px solid transparent;
+      font-weight: bold;
+      &:hover, &:focus {
+          border-bottom: 3px solid currentColor;
+      }
+    }
+
+    section {
+      max-width: 28%;
+      margin: 0 auto;
+    }
+
+    .post-meta {
+      font-size: 1rem;
+      font-style: italic;
+      display: block;
+      margin-bottom: 4vh;
+      color: var(--secondary-color);
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 0;
+    }
+
+    /*slider switch css */
+    .theme-switch-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    #enable {
+        margin-left: 10px;
+        font-size: 15px;
+      }
+
+    .theme-switch {
+      display: inline-block;
+      position: relative;
+      width: 44px;
+      height: 26px;
+    }
+
+    .theme-switch input {
+      display:none;
+    }
+
+    .slider {
+      position: absolute;
+      background-color: #ccc;
+      cursor: pointer;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      background-color: #fff;
+      content: "";
+      width: 20px;
+      height: 20px;
+      left: 4px;
+      bottom: 3px;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #818cab;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(16px);
+    }
+
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
