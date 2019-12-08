@@ -81,10 +81,10 @@ EDIT ON
     /*    position: relative;*/
         font-family: 'Anonymous Pro', monospace;
     /*    top: 50%;  */
-       width: 24em;
+        width: 24em;
     /*    margin: 0 auto;*/
         border-right: 2px solid rgba(255,255,255,.75);
-        font-size: 70px;
+        font-size: 6vw;
     /*    text-align: center;*/
         white-space: nowrap;
         overflow: hidden;
