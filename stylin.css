@@ -3,21 +3,26 @@ h1{
     font-size: 90px;
     margin: 0px;
 }
+
 h3{
     margin-left: 15px;
 }
+
 /*DROPDOWN*/
     ul {
       list-style-type: circle;
     }
+
     #myUL {
       list-style-type: none;
       margin: px;
       padding-left: 10px;
     }
+
     li{
         margin: 10px;
     }
+
     .caret {
       cursor: pointer;
       -webkit-user-select: none; /* Safari 3.1+ */
@@ -27,21 +32,26 @@ h3{
       text-decoration: underline;
     /*  margin: 0px;*/
     }
+
     .caret::before {
       display: inline-block;
       margin-right: 6px;
     }
+
     .caret-down::before {
       -ms-transform: rotate(90deg); /* IE 9 */
       -webkit-transform: rotate(90deg); /* Safari */'
       transform: rotate(90deg); 
     }
+
     .nested {
       display: none;
     }
+
     .active {
       display: block;
     }
+
 HTML CSSResult
 EDIT ON
 /* typing header */
@@ -49,16 +59,16 @@ EDIT ON
     /* Global */
     html{
       min-height: 100%;
-      overflow: hidden;
+      overflow: normal;
     }
     .line-1{
     /*    position: relative;*/
         font-family: 'Anonymous Pro', monospace;
     /*    top: 50%;  */
-        width: 24em;
+/*        width: 24em;*/
     /*    margin: 0 auto;*/
         border-right: 2px solid rgba(255,255,255,.75);
-        font-size: 6vw;
+        font-size: 80px;
     /*    text-align: center;*/
         white-space: nowrap;
         overflow: hidden;
@@ -73,7 +83,7 @@ EDIT ON
     }
     @keyframes typewriter{
       from{width: 0;}
-      to{width: 57%;}
+      to{width: 670px;}
     }
     @keyframes blinkTextCursor{
       from{border-right-color: rgba(255,255,255,.75);}
@@ -100,7 +110,8 @@ EDIT ON
       color: var(--font-color);
       max-width: 90%;
       margin: 0 auto;
-      font-size: calc(1rem + 0.1vh);
+/*      font-size: calc(1rem + 0.1vh);*/
+        font-size: 18px;
     }
 /*
     h1 {
@@ -125,10 +136,12 @@ EDIT ON
           border-bottom: 3px solid currentColor;
       }
     }
+
     section {
       max-width: 28%;
       margin: 0 auto;
     }
+
     .post-meta {
       font-size: 1rem;
       font-style: italic;
@@ -136,29 +149,35 @@ EDIT ON
       margin-bottom: 4vh;
       color: var(--secondary-color);
     }
+
     nav {
       display: flex;
       justify-content: flex-end;
       padding: 20px 0;
     }
+
     /*slider switch css */
     .theme-switch-wrapper {
       display: flex;
       align-items: center;
     }
+
     #enable {
         margin-left: 10px;
         font-size: 15px;
-      }
+    }
+
     .theme-switch {
       display: inline-block;
       position: relative;
       width: 44px;
       height: 26px;
     }
+
     .theme-switch input {
       display:none;
     }
+
     .slider {
       position: absolute;
       background-color: #ccc;
@@ -169,6 +188,7 @@ EDIT ON
       top: 0;
       transition: .4s;
     }
+
     .slider:before {
       position: absolute;
       background-color: #fff;
@@ -179,15 +199,19 @@ EDIT ON
       bottom: 3px;
       transition: .4s;
     }
+
     input:checked + .slider {
       background-color: #818cab;
     }
+
     input:checked + .slider:before {
       transform: translateX(16px);
     }
+
     .slider.round {
       border-radius: 34px;
     }
+
     .slider.round:before {
       border-radius: 50%;
     }
