@@ -36,7 +36,7 @@
 
         document.addEventListener('DOMContentLoaded', function(event){
         // array with texts to type in typewriter
-        var dataText = [ "Bonnie Zheng 🗽"];
+        var dataText = [ "Bonnie Zheng"];
 
         // type one text in the typwriter
         // keeps calling itself until the text is finished
@@ -62,7 +62,7 @@
          if (typeof dataText[i] == 'undefined'){
             setTimeout(function() {
               StartTextAnimation(0);
-            }, 10000);
+            }, 1000);
          }
          // check if dataText[i] exists
         if (i < dataText[i].length) {
